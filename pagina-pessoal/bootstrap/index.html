@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Página - Bootstrap</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Portfólio de Lucas Reis, estudante de Ciência da Computação com foco em desenvolvimento web.">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Seu CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Lucas Reis</a>
+
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="menu" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+
+        <button class="btn btn-secondary ms-3" onclick="toggleTheme()">💡</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="container mt-5">
+
+    <h2 class="text-center mb-4">Sobre mim</h2>
+
+    <div class="row align-items-center">
+
+      <div class="col-md-6">
+        <p>
+          Estudante de Ciência da Computação, com foco em desenvolvimento web e resolução de problemas.
+        </p>
+
+        <div class="card mt-3">
+          <div class="card-body">
+            <h5 class="card-title">Curso</h5>
+            <p class="card-text">
+              Graduando em Ciência da Computação (UFLA), com sólida base em algoritmos, estruturas de dados e desenvolvimento de software.
+            </p>
+          </div>
+        </div>
+
+        <div class="card mt-3">
+          <div class="card-body">
+            <h5 class="card-title">Objetivos</h5>
+            <p class="card-text">
+              Busco iniciar minha carreira como desenvolvedor web, contribuindo em projetos reais e criando soluções eficientes.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 text-center">
+        <img src="assets/img/icone.png" class="img-fluid rounded" alt="Minha foto">
+      </div>
+
+    </div>
+
+    <!-- HABILIDADES -->
+    <div class="mt-5">
+      <h2 class="text-center mb-4">Habilidades</h2>
+
+      <div class="text-center">
+        <span class="badge bg-primary m-1">HTML</span>
+        <span class="badge bg-primary m-1">CSS</span>
+        <span class="badge bg-warning text-dark m-1">JavaScript</span>
+        <span class="badge bg-secondary m-1">C++</span>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projetos" class="container mt-5">
+    <h2 class="text-center mb-4">Projetos</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Projeto 1</h5>
+            <p class="card-text">
+              Aplicação que simula um sistema de gerenciamento de matrículas escolares (GCC-188).
+            </p>
+            <ul>
+              <li>Frontend: HTML, CSS, JavaScript e EJS</li>
+              <li>Backend: Node.js</li>
+              <li>Banco de dados: PostgreSQL</li>
+            </ul>
+            <a href="https://github.com/lucasreissvn/Projeto-Final-Engenharia-De-Software" target="_blank" rel="noopener noreferrer">
+              Acesse a aplicação
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Projeto 2</h5>
+            <p class="card-text">
+              Jogo no estilo corredor infinito desenvolvido com tecnologias web (GAC-116).
+            </p>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript (DOM)</li>
+            </ul>
+            <a href="https://github.com/lucasreissvn/GAC-116---desenvolvimento-web-de-jogo" target="_blank" rel="noopener noreferrer">
+              Repositório
+            </a> ou
+            <a href="https://lucasreissvn.github.io/GAC-116---desenvolvimento-web-de-jogo/" target="_blank" rel="noopener noreferrer">
+              Ver online
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Projeto 3</h5>
+            <p class="card-text">
+              Trabalho prático de Algoritmos em Grafos (GCC-218).
+            </p>
+            <ul>
+              <li>C++</li>
+            </ul>
+            <a href="https://github.com/lucasreissvn/Trabalho-pratico-de-grafos" target="_blank" rel="noopener noreferrer">
+              Repositório
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="container mt-5 mb-5">
+    <h2>Contato</h2>
+
+    <p>📧 Email: lucas.silvino@estudante.ufla.br</p>
+    <p>💻 GitHub:
+      <a href="https://github.com/lucasreissvn" target="_blank" rel="noopener noreferrer">
+        github.com/lucasreissvn
+      </a>
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-light text-center p-3">
+    <p>© 2026 - Lucas Reis Silvino</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Seu JS -->
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
